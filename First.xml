@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite parallel="false" name="Suite">
+<suite parallel="tests" name="Suite" thread-count ="5" >
+
   <test name="Test">
+  <parameter name ="browser" value = "chrome"/>
     <classes>
-      <class name="sf.second"/>
+      <class name="sf.NewTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="Test2">
+  <parameter name ="browser" value = "chrome"/>
+    <classes>
+      <class name="sf.NewTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="Test3">
+  <parameter name ="browser" value = "chrome"/>
+    <classes>
+      <class name="sf.NewTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
